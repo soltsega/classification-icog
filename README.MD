@@ -18,6 +18,7 @@ classification-icog/
 │   └── Enzyme_Function_Classification_Ensemble_Colab.ipynb
 └── artifacts/                 # Generated model and evaluation outputs
 ```
+Google Colab implementation: https://colab.research.google.com/drive/185-5kHYXzMG7E1Cuz7QWBeVuJX1TjvOO
 
 The project brief and grading requirements are in `instruction.ipynb`. The modeling notebook is `Enzyme_Function_Classification_Ensemble_Colab.ipynb`; the same notebook is mirrored under `notebooks/` for notebook-focused workflows; keep the two copies in sync when editing.
 
