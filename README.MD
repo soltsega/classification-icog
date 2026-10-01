@@ -38,7 +38,7 @@ Start Jupyter from the repository root so generated files use the repository's `
 jupyter notebook Enzyme_Function_Classification_Ensemble_Colab.ipynb
 ```
 
-The dataset is **DanielHesslow/SwissProt-EC** on Hugging Face. The first run needs internet access to stream a bounded sample and may take time to download/cache the records. The notebook caps the cleaned modeling dataset at 10,000 rows (`MAX_ROWS = 10000`) and tunes on a 2,500-row training subset with two parameter draws per model and five-fold CV. This keeps the required comparisons while reducing runtime. Google Drive mounting and Colab-only setup are not needed for local use.
+The dataset is **DanielHesslow/SwissProt-EC** on Hugging Face. The first run needs internet access to stream a bounded sample and may take time to download/cache the records. The notebook caps the cleaned modeling dataset at 10,000 rows (`MAX_ROWS = 1500`) and tunes on a 800-row stratified training subset with two parameter draws per model and five-fold CV. Each selected model is refit on the full training split. All three representations and models retain five-fold CV. The notebook writes checkpoint models after each training stage so progress is preserved if a later stage takes too long. Google Drive mounting and Colab-only setup are not needed for local use.
 
 ## What the notebook does
 
